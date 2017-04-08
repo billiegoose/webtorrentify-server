@@ -1,6 +1,6 @@
 {
   "name": "webtorrentify-server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A microservice for generating .torrent files from URLs",
   "main": "service.js",
   "scripts": {
@@ -17,6 +17,6 @@
     "mem": "^1.1.0",
     "micro": "^7.3.0",
     "micro-cors": "0.0.4",
-    "webtorrentify-link": "^1.0.2"
+    "webtorrentify-link": "^1.0.3"
   }
 }
