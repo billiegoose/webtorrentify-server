@@ -8,7 +8,17 @@ const cors = require('micro-cors')()
 
 async function service (req, res) {
   let href = url.parse(req.url, true).query.href
-  if (!href) return send(res, 400, "Missing 'href' parameter.")
+  if (!href) {
+    res.setHeader('Content-Type', 'text/html')
+    let html = `<!DOCTYPE html>
+    <html>
+      <title>400 Error</title>
+      <h1>Missing 'href' parameter.</h1>
+      <h2>See docs: <a href="https://npmjs.org/package/webtorrentify-server">https://npmjs.org/package/webtorrentify-server</a></h2>
+    </html>
+    `
+    return send(res, 400, html)
+  }
   let name = path.basename(href)
   let buffer = await webtorrentify(href)
   // Set headers LAST so they don't block micro's awesome error handling
