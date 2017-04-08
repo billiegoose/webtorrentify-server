@@ -1,0 +1,12 @@
+language: node_js
+node_js: 6
+deploy:
+  provider: npm
+  email: wmhilton@gmail.com
+  on:
+    skip_cleanup: true
+    tags: true
+    branch: master
+    repo: wmhilton/webtorrentify-server
+  api_key:
+    secure: dfCtEbr9qUrD/cgzj3ZNIbbMpQvq5UubBvYqHd6g8/rNTvhed8GbgzpIHSVGcGJ5k6mzTwNczm48JchGJVQwB360q7Og/ymyEtNVuUuRCVkkFo6wWddAGNnxSxMdpNrcwJVhjqWxIOa6zuWng0NTE75l8yAjv0zUQeYWD26fl+LqcL91b9bXRcXPFZxZcTw7rq/pcHkJbopEMVyLGsFQ3b3SK069DDWOZFeq6QhKr9b6/IqAWy1gb/HbySkyWBU8IZpiC6Y9fxkvMKO8j7uNg6PwIrTRKLnXkcwzfnde+BHuYNBzYC/sAaevGiaUWz/5LtLNFbc/VZfCoeqs9h0J96V2rSeEIc7NoaQcevLUqTHY2EBMkJqg0RBMCtguBJZMkYxW/xtwBfmJpFa+WAH0ZRjT/qnJLzFRw72JnrizcUSCZy6CMqEbmopCM0ppz4IOQvAaDRti9hvHKerK49yg2+evhwYiOoQm1/jlV/39/ADkPCmM76cFU98YMXOSX7tA55KExRFLwDtSEUlvKnxox9AJUZkjBX7IGKNj/rG4oddIyz8xunij2EkMPiIn3H4ZBSIAx6nYpydvaicdPVf6oMbbyPcEe6Xj0Lou9vbtW4WToSrb3f3MAlmjlHBluQcUhFigq55w96NeizvplQBLoKlwvP3cX7xyQ6KtQ+5nRb0=
