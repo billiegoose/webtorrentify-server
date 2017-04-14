@@ -17,6 +17,6 @@
     "mem": "^1.1.0",
     "micro": "^7.3.0",
     "micro-cors": "0.0.4",
-    "webtorrentify-link": "^1.0.3"
+    "webtorrentify-link": "^1.0.4"
   }
 }
